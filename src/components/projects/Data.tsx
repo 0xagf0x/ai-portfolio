@@ -34,28 +34,20 @@ const PROJECT_CONTENT = [
     ],
     images: [
       {
-        src: '/synto1.png',
+        src: '/unfurly1.png',
         alt: 'Unfur.ly landing page',
       },
       {
-        src: '/synto2.png',
-        alt: 'Synto chat interface',
+        src: '/unfurly2.png',
+        alt: 'Unfurly dashboard'
       },
       {
-        src: '/synto3.png',
-        alt: 'Synto chat interface',
+        src: '/unfurly3.png',
+        alt: 'Furlhub',
       },
       {
-        src: '/synto4.png',
-        alt: 'Synto chat interface',
-      },
-      {
-        src: '/synto5.png',
-        alt: 'Synto chat interface',
-      },
-      {
-        src: '/synto6.png',
-        alt: 'Synto chat interface',
+        src: '/unfurly4.png',
+        alt: 'Custom Furls',
       },
     ],
   },
@@ -87,16 +79,12 @@ const PROJECT_CONTENT = [
     ],
     images: [
       {
-        src: '/rrate1.png',
-        alt: 'Rrate landing page',
+        src: '/seolove1.png',
+        alt: 'SeoLove landing page',
       },
       {
-        src: '/rrate2.png',
-        alt: 'Rrate comparison page',
-      },
-      {
-        src: '/rrate3.png',
-        alt: 'Rrate comparison page',
+        src: '/seolove2.png',
+        alt: 'SeoLove dashboard',
       },
     ],
   },
@@ -124,20 +112,20 @@ const PROJECT_CONTENT = [
     ],
     images: [
       {
-        src: '/defai1.png',
-        alt: 'Landing Page of Ski Resort Weather',
+        src: '/ski_weather1.png',
+        alt: 'Ski Resort Weather landing page',
       },
       {
-        src: '/defai2.png',
-        alt: 'Confirmation popup of Ski Resort Weather',
+        src: '/ski_weather2.png',
+        alt: 'Weather information',
       },
       {
-        src: '/defai3.png',
-        alt: 'Chatbot of Ski Resort Weather',
+        src: '/ski_weather3.png',
+        alt: 'Detailed weather forecast',
       },
       {
-        src: '/defai4.jpeg',
-        alt: 'Winner team',
+        src: '/ski_weather4.jpeg',
+        alt: 'Dark mode',
       },
     ],
   },
@@ -149,18 +137,26 @@ const PROJECT_CONTENT = [
     date: '2024',
     links: [
       {
+        name: 'website',
+        url: 'https://spoiler-shield.vercel.app/'
+      },
+      {
         name: 'github',
         url: 'https://github.com/0xagf0x/spoiler-shield-mobile',
       },
     ],
     images: [
       {
-        src: '/fitgear2.png',
-        alt: 'SpoilerShield chatbot',
+        src: '/spoilershield1.png',
+        alt: 'SpoilerShield marketing page',
       },
       {
-        src: '/fitgear1.png',
-        alt: 'SpoilerShield landing page',
+        src: '/spoilershiel2.png',
+        alt: 'SpoilerShield marketing page',
+      },
+      {
+        src: '/spoilershiel3.png',
+        alt: 'SpoilerShield Google Chrome extension',
       },
     ],
   },
@@ -272,25 +268,26 @@ export const data = [
   {
     category: 'Startup Project',
     title: 'Unfur.ly',
-    src: '/syntopreview.png',
+    src: '/preview_unfurly.png',
     content: <ProjectContent project={{ title: 'Unfur.ly' }} />,
   },
   {
     category: 'Mobile AI App',
     title: 'SpoilerShield',
-    src: '/fitgearpreview.png',
+    src: '/preview_spoilershield.png',
     content: <ProjectContent project={{ title: 'SpoilerShield' }} />,
   },
   {
     category: 'Startup Project',
     title: 'SeoLove.co',
-    src: '/ratepreview.png',
+    src: '/preview_seolove.png',
     content: <ProjectContent project={{ title: 'SeoLove.co' }} />,
   },
   {
     category: 'Web App',
     title: 'Ski Resort Weather',
-    src: '/defaipreview.png',
+    src: '/preview_ski_weather.png',
     content: <ProjectContent project={{ title: 'Ski Resort Weather' }} />,
   },
+  
 ];

@@ -330,7 +330,7 @@ const Chat = () => {
       </div>
 
       {/* Main Content Area */}
-      <div className="container mx-auto flex h-full max-w-3xl flex-col">
+      <div className="container mx-auto flex h-full max-w-3xl max-w-[800px] flex-col">
         {/* Scrollable Chat Content */}
         <div
           className="flex-1 overflow-y-auto px-2"
