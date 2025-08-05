@@ -3,7 +3,6 @@
 import FluidCursor from '@/components/FluidCursor';
 import { Button } from '@/components/ui/button';
 import { GithubButton } from '@/components/ui/github-button';
-import CursorFollowingMemoji from '@/components/ui/cursor-following-memoji';
 
 import WelcomeModal from '@/components/welcome-modal';
 import { motion } from 'framer-motion';
@@ -85,14 +84,14 @@ export default function Home() {
   return (
     <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 pb-10 md:pb-20">
       {/* big blurred footer word */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-center overflow-hidden">
-        <div
-          className="hidden bg-gradient-to-b from-neutral-800/10 to-neutral-800/0 bg-clip-text text-[10rem] leading-none font-black text-transparent select-none sm:block lg:text-[16rem]"
-          style={{ marginBottom: '-2.5rem' }}
-        >
-          CharlesB
-        </div>
-      </div>
+<div className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-center overflow-hidden z-10">
+  <div
+    className="hidden bg-gradient-to-b from-neutral-800/10 to-neutral-800/0 bg-clip-text text-[10rem] leading-none font-black text-transparent select-none sm:block lg:text-[16rem]"
+    style={{ marginBottom: '-2.5rem' }}
+  >
+    CharlesB
+  </div>
+</div>
 
       <div className="absolute top-6 left-6 z-20">
         <button
