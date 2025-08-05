@@ -47,7 +47,7 @@ const HireMeCard = () => {
         </div>
       </div>
 
-      {/* Internship Info */}
+      {/* Job Info */}
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         {/* Tech stack */}
         <div className="flex items-start gap-3 sm:col-span-2">
