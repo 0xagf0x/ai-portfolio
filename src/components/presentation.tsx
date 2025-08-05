@@ -8,14 +8,12 @@ export function Presentation() {
   // Personal information
   const profile = {
     name: 'Charles Buckley',
-    age: '36',
     location: 'New Jersey, US',
-    // Add a newline character after the emoji
     description:
       "Hey 👋\nI'm Charlie. I'm a software developer. I'm passionate about AI, tech, Entrepreneurship and SaaS tech.",
-    src: '/profil-raph.png',
+    src: '/pfp.png',
     fallbackSrc:
-      'https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3',
+      'https://i.imgur.com/c20WokK.png',
   };
 
   // Animation variants for text elements
@@ -47,7 +45,7 @@ export function Presentation() {
       <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
         {/* Image section */}
         <div className="relative mx-auto aspect-square w-full max-w-sm">
-          <div className="relative h-full w-full overflow-hidden rounded-2xl">
+          <div className="relative h-full w-full  rounded-2xl">
             <motion.div
               initial={{ scale: 0.92, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -58,7 +56,7 @@ export function Presentation() {
                 src={profile.src}
                 alt={profile.name}
                 width={500}
-                height={500}
+                height={800}
                 className="h-full w-full object-cover object-center"
                 onError={(e) => {
                   // Fallback to placeholder if image fails to load
@@ -81,8 +79,6 @@ export function Presentation() {
               {profile.name}
             </h1>
             <div className="mt-1 flex flex-col gap-1 md:flex-row md:items-center md:gap-4">
-              <p className="text-muted-foreground">{profile.age}</p>
-              <div className="bg-border hidden h-1.5 w-1.5 rounded-full md:block" />
               <p className="text-muted-foreground">{profile.location}</p>
             </div>
           </motion.div>
@@ -103,7 +99,7 @@ export function Presentation() {
             transition={{ delay: 0.6, duration: 0.5 }}
             className="mt-4 flex flex-wrap gap-2"
           >
-            {['AI', 'Developer', '42 Paris', 'Sport', 'SaaS Builder'].map(
+            {['Fullstack Web', 'ML/AI', 'Builder'].map(
               (tag) => (
                 <span
                   key={tag}

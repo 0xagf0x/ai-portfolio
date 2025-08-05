@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CharlesB Portfolio",
     description: "Interactive portfolio with an AI-powered Memoji that answers questions about me",
-    creator: "@toukoum",
+    creator: "@0xagf0x",
   },
   icons: {
     icon: [

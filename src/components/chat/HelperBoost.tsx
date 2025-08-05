@@ -70,7 +70,6 @@ const questionsByCategory = [
       'Who are you?',
       'What are your passions?',
       'How did you get started in tech?',
-      'Where do you see yourself in 5 years?',
     ],
   },
   {
@@ -82,7 +81,6 @@ const questionsByCategory = [
       'What makes you a valuable team member?',
       'Where are you working now?',
       'Why should I hire you?',
-      "What's your educational background?",
     ],
   },
   {
@@ -97,7 +95,6 @@ const questionsByCategory = [
     icon: GraduationCapIcon,
     questions: [
       'What are your skills?',
-      'How was your experience at École 42?',
     ],
   },
   {
@@ -105,8 +102,8 @@ const questionsByCategory = [
     name: 'Fun',
     icon: PartyPopper,
     questions: [
-      'Mountain Bike you said?? Show me!',
-      "What's the craziest thing you've ever done?",
+      'Snowboarding you said?? Show me!',
+      "Where's your favorite place you've traveled?",
       'Mac or PC?',
       'What are you certain about that 90% get wrong?',
     ],

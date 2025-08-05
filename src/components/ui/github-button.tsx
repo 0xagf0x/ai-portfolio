@@ -97,13 +97,6 @@ function GithubButton({
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
   };
 
-  // Fetch stars from GitHub API
-  useEffect(() => {
-    fetch('/api/github-stars')
-      .then((res) => res.json())
-      .then((data) => setTargetStars(data.stars));
-  }, []);
-
   const startAnimation = useCallback(() => {
     if (isAnimating || hasAnimated || targetStars === null) return;
 

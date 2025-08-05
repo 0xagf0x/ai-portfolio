@@ -8,32 +8,24 @@ export function Contact() {
   // Contact information
   const contactInfo = {
     name: 'Raphael Giraud',
-    email: 'raphaelgiraud12@gmail.com',
+    email: 'charlesbuckley122@gmail.com',
     handle: '@Raphael.Giraud',
     socials: [
       {
         name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/raphael-giraud-60939519a/',
-      },
-      {
-        name: 'Youtube',
-        url: 'https://www.youtube.com/@toukoum',
+        url: 'https://www.linkedin.com/in/charles-buckley-20447950/',
       },
       {
         name: 'Instagram',
-        url: 'https://www.instagram.com/raphael.giraud/',
-      },
-      {
-        name: 'Discord',
-        url: 'https://discord.com/users/toukoum',
+        url: 'https://www.instagram.com/itscharliebe/',
       },
       {
         name: 'Github',
-        url: 'https://github.com/toukoum',
+        url: 'https://github.com/0xagf0x',
       },
       {
         name: 'X',
-        url: 'https://x.com/toukoumcode',
+        url: 'https://x.com/0xagf0x',
       },
     ],
   };
