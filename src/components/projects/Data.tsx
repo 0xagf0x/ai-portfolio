@@ -187,6 +187,99 @@ const PROJECT_CONTENT = [
       },
     ],
   },
+   {
+    title: 'AliensAmongUs.io',
+    description:
+      "AAU is a permissionless NFT auction house powered by the ZORA protocol, enabling creators and collectors to buy and sell digital assets in a decentralized marketplace. Our platform supports both Ethereum mainnet and testnet environments, providing a seamless experience for discovering, listing, and bidding on unique NFT collections. Built with cutting-edge Web3 technology, we're dedicated to making NFT trading accessible and transparent for everyone.",
+    techStack: ['NextJS', 'Solidity', 'Web3.JS'],
+    date: '2024',
+    links: [
+       {
+        name: 'github',
+        url: 'https://github.com/0xagf0x/aliensAmongUs'
+      },
+    ],
+    images: [
+      {
+        src: '/aau1.png',
+        alt: 'Main view',
+      },
+      {
+        src: '/aau2.png',
+        alt: 'Homepage',
+      },
+      {
+        src: '/aau3.png',
+        alt: 'Metaverse clothing view',
+      },
+      {
+        src: '/aau4.png',
+        alt: 'NFT royalty breakdown',
+      },
+    ],
+  },
+  {
+    title: 'PWA Music Player',
+    description:
+      'This is a Progressive Web App (PWA) music player designed specifically for playing WAV audio files locally in the browser. The app allows users to upload and manage their personal music library with features including play/pause controls, track navigation, playlist management, search functionality, and a clean, responsive interface. Users can organize their music collection, view track durations, delete songs, and enjoy a seamless audio playback experience with progress tracking and shuffle capabilities.',
+    techStack: ['JavaScript', 'Typescript', 'JSMediaTags'],
+    date: '2024',
+    links: [
+      {
+        name: 'website',
+        url: 'https://wav-player.vercel.app/'
+      },
+       {
+        name: 'github',
+        url: 'https://github.com/0xagf0x/wav-player/'
+      },
+    ],
+    images: [
+      {
+        src: '/pwa_music_player1.png',
+        alt: 'Main view',
+      },
+      {
+        src: '/pwa_music_player2.png',
+        alt: 'Multiple audio files added',
+      },
+      {
+        src: '/pwa_music_player3.png',
+        alt: 'Player view',
+      },
+    ],
+  },
+   {
+    title: 'ThreeJS Scroller',
+    description:
+      '',
+    techStack: [ 'ThreeJS', 'JavaScript', 'Typescript','JSMediaTags'],
+    date: '2024',
+    links: [
+      {
+        name: 'website',
+        url: 'https://threejs-scroller.vercel.app/'
+      },
+       {
+        name: 'github',
+        url: 'https://github.com/0xagf0x/threejs-scroller'
+      },
+    ],
+    images: [
+      {
+        src: '/threejs_scroller1.png',
+        alt: 'Main view',
+      },
+      {
+        src: '/threejs_scroller2.png',
+        alt: 'Multiple audio files added',
+      },
+      {
+        src: '/threejs_scroller3.png',
+        alt: 'Player view',
+      },
+    ],
+  },
 ];
 
 // Define interface for project prop
@@ -317,10 +410,28 @@ export const data = [
     content: <ProjectContent project={{ title: 'Ski Resort Weather' }} />,
   },
   {
+    category: 'Startup Project',
+    title: 'AliensAmongUs.io',
+    src: '/preview_aau.png',
+    content: <ProjectContent project={{ title: 'AliensAmongUs.io' }} />,
+  },
+  {
     category: 'Client Website',
     title: 'Shaman Asher',
     src: '/preview_shaman_asher.png',
     content: <ProjectContent project={{ title: 'Shaman Asher' }} />,
+  },
+  {
+    category: 'Progressive Web App',
+    title: 'PWA Music Player',
+    src: '/preview_pwa_music_player.png',
+    content: <ProjectContent project={{ title: 'PWA Music Player' }} />,
+  },
+  {
+    category: 'Personal Hacking',
+    title: 'ThreeJS Scroller',
+    src: '/preview_threejs_scroller.png',
+    content: <ProjectContent project={{ title: 'ThreeJS Scroller' }} />,
   },
   
 ];
