@@ -137,9 +137,6 @@ export default function Home() {
           priority
           className="translate-y-14 scale-[2] object-cover"
         />
-
-        {/* <CursorFollowingMemoji 
-        imageUrl="/landing-memojis.png"/> */}
       </div>
 
       {/* input + quick buttons */}
