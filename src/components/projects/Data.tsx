@@ -7,53 +7,35 @@ import { url } from 'inspector';
 // Enhanced project content array with all projects
 const PROJECT_CONTENT = [
   {
-    title: 'Synto',
+    title: 'Unfur.ly',
     description:
-      'Synto is an AI-powered interface that transforms complex blockchain interactions into simple, natural language commands. Whether you want to send tokens, stake assets, swap coins, or even create NFTs or liquidity pools, just tell Synto what to do — no manual wallet interactions, no technical jargon. One of my biggest projects yet',
+      'Unfur.ly is your link command center. It monitors your critical links 24/7, alerts you when they break, and delivers real-time insights—so you can focus on growth.',
     techStack: [
-      'Next.js',
+      'Vue',
       'TailwindCSS',
-      'Web3.js',
-      'shadcn-ui',
-      'TypeScript',
-      'Phantom Wallet',
-      'OpenAI API',
-      'Vercel AI SDK',
-      'Solana Agent kit',
-      'Neon',
-      'Prisma'
+      'Typescript',
+      'Vite',
+      'Chart.js',
     ],
     date: '2025',
     links: [
       {
         name: 'website',
-        url: 'https://synto.fun',
-      },
-      {
-        name: 'Launch Video',
-        url: 'https://www.youtube.com/watch?v=4QUE2KgKDUw',
+        url: 'https://unfur.ly/app/',
       },
       {
         name: 'X',
-        url: 'https://x.com/chainSynto',
+        url: 'https://x.com/unfur_ly',
       },
       {
-        name: 'Technical Video',
-        url: 'https://www.youtube.com/watch?v=1CjBLKPUwtA&feature=youtu.be',
-      },
-      {
-        name: 'Pitch Deck',
-        url: 'https://drive.google.com/file/d/1B3m44mEgv81rJHfjNfTKi147yX4raQed/view?usp=sharing',
-      },
-      {
-        name: 'Usage tutorial',
-        url: 'https://www.youtube.com/watch?v=PRu1cfvT2bA',
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/company/unfurly',
       }
     ],
     images: [
       {
         src: '/synto1.png',
-        alt: 'Synto landing page',
+        alt: 'Unfur.ly landing page',
       },
       {
         src: '/synto2.png',
@@ -78,20 +60,30 @@ const PROJECT_CONTENT = [
     ],
   },
   {
-    title: 'Rrate',
+    title: 'SeoLove.co',
     description:
-      "Rrate is a fun website to allow user to compare his salary with the richest people in the world. Try it now it's online!",
-    techStack: ['Html', 'Css', 'Javascript'],
-    date: '2024',
+      "One scan is worth a thousand visits. Paste your domain. Get your free score and 25-point personalized SEO game plan in <10 seconds. ",
+     techStack: [
+      'Vue',
+      'TailwindCSS',
+      'Typescript',
+      'Vite',
+      'Chart.js',
+    ],
+    date: '2025',
     links: [
       {
         name: 'website',
-        url: 'https://rrate.app',
+        url: 'https://seolove.co/app/',
       },
       {
-        name: 'github',
-        url: 'https://github.com/toukoum/Rrate',
+        name: 'X',
+        url: 'https://x.com/seolove_co',
       },
+      {
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/company/seolove-co',
+      }
     ],
     images: [
       {
@@ -109,43 +101,39 @@ const PROJECT_CONTENT = [
     ],
   },
   {
-    title: 'Defai',
+    title: 'Ski Resort Weather',
     description:
-      "We Win ETHOXford hackathon by building DEFAI. DEFAI stands for Decentralized Finance Artificial Intelligence. It's an AI-powered chat interface that simplifies on-chain operations on the Avalanche blockchain by allowing users to interact using natural language. This makes complex DeFi operations accessible even for those with limited technical expertise.",
+      "A web application that displays ski resorts on a Mapbox interactive map, plus current and weekly weather forecasts from WeatherAPI. You can also mark favorite resorts and quickly view their conditions.",
     techStack: [
-      'Next.js',
-      'TailwindCSS',
-      'shadcn-ui',
-      'Vercel AI SDK',
-      'TypeScript',
+      'React.JS',
+      'CSS',
+      'Mapbox',
+      'HTML',
+      'Vercel',
     ],
     date: '2025',
     links: [
       {
         name: 'website',
-        url: 'https://dorahacks.io/buidl/22605',
+        url: 'https://ski-map.vercel.app/',
       },
       {
         name: 'github',
-        url: 'https://github.com/toukoum/DEFAI',
-      },
-      {
-        name: 'LinkedIn',
-        url: 'https://www.linkedin.com/feed/update/urn:li:activity:7299337190151483392/',
+        url: 'https://github.com/0xagf0x/ski-weather',
       },
     ],
     images: [
       {
         src: '/defai1.png',
-        alt: 'Landing Page of Defai',
+        alt: 'Landing Page of Ski Resort Weather',
       },
       {
         src: '/defai2.png',
-        alt: 'Confirmation popup of Defai',
+        alt: 'Confirmation popup of Ski Resort Weather',
       },
       {
         src: '/defai3.png',
-        alt: 'Chatbot of Defai',
+        alt: 'Chatbot of Ski Resort Weather',
       },
       {
         src: '/defai4.jpeg',
@@ -154,25 +142,25 @@ const PROJECT_CONTENT = [
     ],
   },
   {
-    title: 'Fitgear',
+    title: 'SpoilerShield',
     description:
-      'Won the Gotta Go Hack IA by building Fitgear, a virtual voice seller accessible by QR code to improve the ratio between customers and sellers. Created an AI pipeline with API calls and a RAG system for natural language interactions.',
-    techStack: ['Next.js', 'TailwindCSS', 'OpenAI API', 'Langchain'],
+      'AI-powered spoiler protection for social media browsing. Never get spoiled again while browsing Reddit, Twitter, or other social platforms. Spoiler Shield uses advanced machine learning to detect and hide potential spoilers before you see them.',
+    techStack: ['React Native', 'TailwindCSS', 'TensorFlow', 'Core ML', 'Expo', 'Langchain'],
     date: '2024',
     links: [
       {
-        name: 'Linkedin',
-        url: 'https://www.linkedin.com/posts/raphael-giraud-60939519a_hackathon-innovation-sporttech-activity-7210399263774674946-qSXq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC6vwikBVSEkS7XWktWS7y6GR3GHwAlKslc',
+        name: 'github',
+        url: 'https://github.com/0xagf0x/spoiler-shield-mobile',
       },
     ],
     images: [
       {
         src: '/fitgear2.png',
-        alt: 'Fitgear chatbot',
+        alt: 'SpoilerShield chatbot',
       },
       {
         src: '/fitgear1.png',
-        alt: 'Fitgear landing page',
+        alt: 'SpoilerShield landing page',
       },
     ],
   },
@@ -214,119 +202,6 @@ const PROJECT_CONTENT = [
       {
         src: '/datai4.png',
         alt: 'Datai chatbot',
-      }
-    ],
-  },
-  {
-    title: '3d Pong Game',
-    description:
-      "Transcendance is the final project of my 42 cursus. It's a 3D pong game with multiplayer capabilities, user authentication, and real-time gameplay. We had to do everything from scratch, so it was pretty challenging and we learned a lot.",
-    techStack: ['Django', 'Python', 'JavaScript', 'Websockets', 'PostgreSQL', 'Docker', 'Nginx', 'Web3', 'Solidity'],
-    date: '2023',
-    links: [
-      {
-        name: 'GitHub',
-        url: 'https://github.com/toukoum/Transcendance',
-      },
-    ],
-    images: [
-      {
-        src: '/trans1.png',
-        alt: 'Transcendance landing page',
-      },
-      {
-        src: '/trans2.png',
-        alt: 'Transcendance game',
-      },
-      {
-        src: '/trans3.png',
-        alt: 'Transcendance game',
-      },
-      {
-        src: '/trans4.png',
-        alt: 'Transcendance game',
-      },
-      {
-        src: '/trans5.png',
-        alt: 'Transcendance game',
-      },
-      {
-        src: '/trans6.png',
-        alt: 'Transcendance game',
-      }
-
-    ],
-  },
-  {
-    title: 'Minishell',
-    description:
-      "Minishell is a project that aims to create a simple shell. It's a great introduction to process creation and management in C, offering fundamental Unix command-line functionality. This was a very challenging project, but I learned a lot from it.",
-    techStack: ['C', 'Unix', 'Bash'],
-    date: '2023',
-    links: [
-      {
-        name: 'GitHub',
-        url: 'https://github.com/toukoum/Michelle-42',
-      },
-    ],
-    images: [
-      {
-        src: '/minishell1.png',
-        alt: 'Minishell landing page',
-      }
-    ],
-  },
-  {
-    title: 'YouBot',
-    description:
-      'YouBot is a Python Bot that Scrapes Videos from Pexels, adds a random song from a Songs Folder, then auto-uploads the videos to your YouTube Channel for continuous content generation.',
-    techStack: ['Python', 'YouTube API', 'Pexels API'],
-    date: '2022',
-    links: [
-      {
-        name: "YouTube Video",
-        url: "https://youtu.be/vp1v5mBG7rA "
-      },
-      {
-        name: 'GitHub',
-        url: 'https://github.com/toukoum/YouBot',
-      }
-    ],
-    images: [
-      {
-        src: '/youbot1.jpg',
-        alt: 'Youbot landing page',
-      },
-      {
-        src: '/youbot2.png',
-        alt: 'Youbot chatbot',
-      },
-    ],
-  },
-  {
-    title: 'Old Portfolio',
-    description:
-      'My previous traditional portfolio built with vanilla HTML, CSS and JS with GSAP animations for a smooth and interactive user experience.',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'GSAP'],
-    date: '2022',
-    links: [
-      {
-        name: 'Website',
-        url: 'https://toukoum.github.io/oldPortfolio/',
-      },
-      {
-        name: 'GitHub',
-        url: 'https://github.com/toukoum/portfolio',
-      },
-    ],
-    images: [
-      {
-        src: '/oldport1.png',
-        alt: 'Old Portfolio landing page',
-      },
-      {
-        src: '/oldport2.png',
-        alt: 'Old Portfolio projects',
       }
     ],
   },
@@ -437,56 +312,32 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
 export const data = [
   {
     category: 'Startup Project',
-    title: 'Synto',
+    title: 'Unfur.ly',
     src: '/syntopreview.png',
-    content: <ProjectContent project={{ title: 'Synto' }} />,
+    content: <ProjectContent project={{ title: 'Unfur.ly' }} />,
   },
   {
-    category: 'Fun Tool',
-    title: 'Rrate',
-    src: '/ratepreview.png',
-    content: <ProjectContent project={{ title: 'Rrate' }} />,
-  },
-  {
-    category: 'Hackathon Winner',
-    title: 'Defai',
-    src: '/defaipreview.png',
-    content: <ProjectContent project={{ title: 'Defai' }} />,
-  },
-  {
-    category: 'Hackathon Winner',
-    title: 'Fitgear',
+    category: 'Mobile AI App',
+    title: 'SpoilerShield',
     src: '/fitgearpreview.png',
-    content: <ProjectContent project={{ title: 'Fitgear' }} />,
+    content: <ProjectContent project={{ title: 'SpoilerShield' }} />,
+  },
+  {
+    category: 'Startup Project',
+    title: 'SeoLove.co',
+    src: '/ratepreview.png',
+    content: <ProjectContent project={{ title: 'SeoLove.co' }} />,
+  },
+  {
+    category: 'Web App',
+    title: 'Ski Resort Weather',
+    src: '/defaipreview.png',
+    content: <ProjectContent project={{ title: 'Ski Resort Weather' }} />,
   },
   {
     category: 'Business Intelligence',
     title: 'Datai',
     src: '/dataipreview.png',
     content: <ProjectContent project={{ title: 'Datai' }} />,
-  },
-  {
-    category: '42 Project',
-    title: '3d Pong Game',
-    src: '/transcendancepreview.png',
-    content: <ProjectContent project={{ title: '3d Pong Game' }} />,
-  },
-  {
-    category: '42 Project',
-    title: 'Minishell',
-    src: '/minishellpreview.png',
-    content: <ProjectContent project={{ title: 'Minishell' }} />,
-  },
-  {
-    category: 'Automation',
-    title: 'YouBot',
-    src: '/youbotpreview.png',
-    content: <ProjectContent project={{ title: 'YouBot' }} />,
-  },
-  {
-    category: 'Web Development',
-    title: 'Old Portfolio',
-    src: '/oldportfoliopreview.png',
-    content: <ProjectContent project={{ title: 'Old Portfolio' }} />,
   },
 ];
