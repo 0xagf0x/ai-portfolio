@@ -3,6 +3,8 @@
 import FluidCursor from '@/components/FluidCursor';
 import { Button } from '@/components/ui/button';
 import { GithubButton } from '@/components/ui/github-button';
+import CursorFollowingMemoji from '@/components/ui/cursor-following-memoji';
+
 import WelcomeModal from '@/components/welcome-modal';
 import { motion } from 'framer-motion';
 import {
@@ -85,7 +87,7 @@ export default function Home() {
       {/* big blurred footer word */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-center overflow-hidden">
         <div
-          className="hidden bg-gradient-to-b from-neutral-500/10 to-neutral-500/0 bg-clip-text text-[10rem] leading-none font-black text-transparent select-none sm:block lg:text-[16rem]"
+          className="hidden bg-gradient-to-b from-neutral-800/10 to-neutral-800/0 bg-clip-text text-[10rem] leading-none font-black text-transparent select-none sm:block lg:text-[16rem]"
           style={{ marginBottom: '-2.5rem' }}
         >
           CharlesB
@@ -130,6 +132,9 @@ export default function Home() {
           priority
           className="translate-y-14 scale-[2] object-cover"
         />
+
+       {/* <CursorFollowingMemoji 
+        imageUrl="/landing-memojis.png"/> */}
       </div>
 
       {/* input + quick buttons */}

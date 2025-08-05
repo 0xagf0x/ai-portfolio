@@ -9,7 +9,7 @@ export function Contact() {
   const contactInfo = {
     name: 'Raphael Giraud',
     email: 'charlesbuckley122@gmail.com',
-    handle: '@Raphael.Giraud',
+    handle: '@0xagf0x',
     socials: [
       {
         name: 'LinkedIn',
