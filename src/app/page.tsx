@@ -3,13 +3,12 @@
 import FluidCursor from "@/components/FluidCursor";
 import { Button } from "@/components/ui/button";
 import { GithubButton } from "@/components/ui/github-button";
-import AnimatedAIText from '@/components/AnimatedAIText';
+import AnimatedAIText from "@/components/AnimatedAIText";
 import WelcomeModal from "@/components/welcome-modal";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
   BriefcaseBusiness,
-  
   Laugh,
   Layers,
   PartyPopper,
@@ -114,17 +113,18 @@ export default function Home() {
         initial="hidden"
         animate="visible"
       >
-       <div className="flex flex-col gap-[8px]">
-  <h2 className="m-0 text-secondary-foreground text-xl font-semibold md:text-2xl">
-    Hey, I'm Charlie 👋
-  </h2>
-  <span className="text-secondary-foreground text-sm font-light md:text-2xl">
-    and this is my
-  </span>
-  <h1 className="m-0 text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
-    <AnimatedAIText className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl" /> Portfolio
-  </h1>
-</div>
+        <div className="flex flex-col gap-[8px]">
+          <h2 className="m-0 text-secondary-foreground text-xl font-semibold md:text-2xl">
+            Hey, I'm Charlie 👋
+          </h2>
+          <span className="text-secondary-foreground text-sm font-light md:text-2xl">
+            and this is my
+          </span>
+          <h1 className="m-0 text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
+            <AnimatedAIText className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl" />{" "}
+            Portfolio
+          </h1>
+        </div>
       </motion.div>
 
       {/* centre memoji */}
