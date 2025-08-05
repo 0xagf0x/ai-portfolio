@@ -1,22 +1,21 @@
-import { tool } from 'ai';
-import { z } from 'zod';
+import { tool } from "ai";
+import { z } from "zod";
 
 export const getHired = tool({
   description:
-    "Gives a summary of what kind of job I'm looking for, plus my contact info and how to reach me. Use this tool when the user asks about my job search or how to contact me for opportunities.",
+    "Shows the HireMeCard component with comprehensive hiring information. Use this tool when the user asks about hiring, job opportunities, employment, work, career, positions, roles, or phrases like 'Are you looking to hire me?', 'available for work', 'looking for opportunities', etc.",
   parameters: z.object({}),
   execute: async () => {
-    return `Here’s what I’m looking for 👇
+    return `
+    I'm always looking for exciting opportunities where I can build impactful products using AI/ML and modern web technologies. 
 
+    Ready to chat about how we can work together? Hit that contact button! ✌️
 
-- 🔥 I move fast, learn faster, and I’m HUNGRYYYYY for big challenges
-
-📬 **Contact me** via:
-- Email: charlesbuckley122@gmail.com
-- LinkedIn: [linkedin.com/in/charles-b](https://www.linkedin.com/in/charles-buckley-20447950/)
-- GitHub: [github.com/0xagf0x](https://github.com/0xagf0x)
-
-Let's build cool shit together ✌️
+    📬 **Contact me** via:
+    - **Email:** charlesbuckley122@gmail.com
+    - **LinkedIn:** https://www.linkedin.com/in/charles-buckley-20447950/
+    - **GitHub:** https://github.com/0xagf0x
+   
     `;
   },
 });
