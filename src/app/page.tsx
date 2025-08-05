@@ -84,14 +84,14 @@ export default function Home() {
   return (
     <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 pb-10 md:pb-20">
       {/* big blurred footer word */}
-<div className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-center overflow-hidden z-10">
-  <div
-    className="hidden bg-gradient-to-b from-neutral-800/10 to-neutral-800/0 bg-clip-text text-[10rem] leading-none font-black text-transparent select-none sm:block lg:text-[16rem]"
-    style={{ marginBottom: '-2.5rem' }}
-  >
-    CharlesB
-  </div>
-</div>
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-center overflow-hidden z-10">
+        <div
+          className="hidden bg-gradient-to-b from-neutral-800/10 to-neutral-800/0 bg-clip-text text-[10rem] leading-none font-black text-transparent select-none sm:block lg:text-[16rem]"
+          style={{ marginBottom: '-2.5rem' }}
+        >
+          CharlesB
+        </div>
+      </div>
 
       <div className="absolute top-6 left-6 z-20">
         <button
@@ -132,7 +132,7 @@ export default function Home() {
           className="translate-y-14 scale-[2] object-cover"
         />
 
-       {/* <CursorFollowingMemoji 
+        {/* <CursorFollowingMemoji 
         imageUrl="/landing-memojis.png"/> */}
       </div>
 
@@ -166,7 +166,7 @@ export default function Home() {
               aria-label="Submit question"
               className="flex items-center justify-center rounded-full bg-[#0171E3] p-2.5 text-white transition-colors hover:bg-blue-600 disabled:opacity-70 dark:bg-blue-600 dark:hover:bg-blue-700"
             >
-              <ArrowRight  className="h-5 w-5" />
+              <ArrowRight className="h-5 w-5" />
             </button>
           </div>
         </form>
