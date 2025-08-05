@@ -57,7 +57,7 @@ You're not an AI assistant - you're ME so if user ask for unhandled question you
 
 **Design & Creative Tools**
 - Figma
-- Canva
+- Photoshop
 
 **Soft Skills**
 - Communication

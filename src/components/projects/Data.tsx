@@ -160,6 +160,33 @@ const PROJECT_CONTENT = [
       },
     ],
   },
+  {
+    title: 'Shaman Asher',
+    description:
+      'I built a spiritual services website using Next.js, React, and Tailwind CSS for a Richmond-based ordained shaman named Asher Miller who combines Messianic Jewish traditions with earth-based shamanic practices. The site is a clean, modern platform showcasing his virtual and in-person healing services like chakra alignment, dream interpretation, and smudging ceremonies, with standard pages including a blog system for spiritual content, services showcase, testimonials, and contact - basically a professional web presence for someone doing integrated spiritual healing work, all built with a responsive Tailwind-styled interface.',
+    techStack: ['NextJS', 'TailwindCSS', 'Typescript', 'Sanity.io', 'Vercel'],
+    date: '2024',
+    links: [
+      {
+        name: 'website',
+        url: 'https://www.shamanasher.com/'
+      },
+    ],
+    images: [
+      {
+        src: '/shaman_asher1.png',
+        alt: 'ShamanAsher homepage hero',
+      },
+      {
+        src: '/shaman_asher2.png',
+        alt: 'ShamanAsher services page',
+      },
+      {
+        src: '/shaman_asher3.png',
+        alt: 'ShamanAsher testimonial page',
+      },
+    ],
+  },
 ];
 
 // Define interface for project prop
@@ -288,6 +315,12 @@ export const data = [
     title: 'Ski Resort Weather',
     src: '/preview_ski_weather.png',
     content: <ProjectContent project={{ title: 'Ski Resort Weather' }} />,
+  },
+  {
+    category: 'Client Website',
+    title: 'Shaman Asher',
+    src: '/preview_shaman_asher.png',
+    content: <ProjectContent project={{ title: 'Shaman Asher' }} />,
   },
   
 ];

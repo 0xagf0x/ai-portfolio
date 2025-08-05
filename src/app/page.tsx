@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import FluidCursor from '@/components/FluidCursor';
-import { Button } from '@/components/ui/button';
-import { GithubButton } from '@/components/ui/github-button';
+import FluidCursor from "@/components/FluidCursor";
+import { Button } from "@/components/ui/button";
+import { GithubButton } from "@/components/ui/github-button";
 
-import WelcomeModal from '@/components/welcome-modal';
-import { motion } from 'framer-motion';
+import WelcomeModal from "@/components/welcome-modal";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   BriefcaseBusiness,
@@ -13,31 +13,31 @@ import {
   Layers,
   PartyPopper,
   UserRoundSearch,
-} from 'lucide-react';
-import Image from 'next/image';
-import { useRouter } from 'next/navigation';
-import { useEffect, useRef, useState } from 'react';
+} from "lucide-react";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 
 /* ---------- quick-question data ---------- */
 const questions = {
-  Me: 'Who are you? I want to know more about you.',
-  Projects: 'What are your projects? What are you working on right now?',
-  Skills: 'What are your skills? Give me a list of your soft and hard skills.',
-  Fun: 'What are your favorite hobbies?',
-  Contact: 'How can I contact you?',
+  Me: "Who are you? I want to know more about you.",
+  Projects: "What are your projects? What are you working on right now?",
+  Skills: "What are your skills? Give me a list of your soft and hard skills.",
+  Fun: "What are your favorite hobbies?",
+  Contact: "How can I contact you?",
 } as const;
 
 const questionConfig = [
-  { key: 'Me', color: '#329696', icon: Laugh },
-  { key: 'Projects', color: '#3E9858', icon: BriefcaseBusiness },
-  { key: 'Skills', color: '#856ED9', icon: Layers },
-  { key: 'Fun', color: '#B95F9D', icon: PartyPopper },
-  { key: 'Contact', color: '#C19433', icon: UserRoundSearch },
+  { key: "Me", color: "#329696", icon: Laugh },
+  { key: "Projects", color: "#3E9858", icon: BriefcaseBusiness },
+  { key: "Skills", color: "#856ED9", icon: Layers },
+  { key: "Fun", color: "#B95F9D", icon: PartyPopper },
+  { key: "Contact", color: "#C19433", icon: UserRoundSearch },
 ] as const;
 
 /* ---------- component ---------- */
 export default function Home() {
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
   const router = useRouter();
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -50,7 +50,7 @@ export default function Home() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { type: 'ease', duration: 0.8 },
+      transition: { type: "ease", duration: 0.8 },
     },
   };
   const bottomElementVariants = {
@@ -58,26 +58,26 @@ export default function Home() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { type: 'ease', duration: 0.8, delay: 0.2 },
+      transition: { type: "ease", duration: 0.8, delay: 0.2 },
     },
   };
 
   useEffect(() => {
     // Précharger les assets du chat en arrière-plan
     const img = new window.Image();
-    img.src = '/landing-memojis.png';
+    img.src = "/landing-memojis.png";
 
     // Précharger les vidéos aussi
-    const linkWebm = document.createElement('link');
-    linkWebm.rel = 'preload'; // Note: prefetch au lieu de preload
-    linkWebm.as = 'video';
-    linkWebm.href = '/final_memojis.webm';
+    const linkWebm = document.createElement("link");
+    linkWebm.rel = "preload"; // Note: prefetch au lieu de preload
+    linkWebm.as = "video";
+    linkWebm.href = "/final_memojis.webm";
     document.head.appendChild(linkWebm);
 
-    const linkMp4 = document.createElement('link');
-    linkMp4.rel = 'prefetch';
-    linkMp4.as = 'video';
-    linkMp4.href = '/final_memojis_ios.mp4';
+    const linkMp4 = document.createElement("link");
+    linkMp4.rel = "prefetch";
+    linkMp4.as = "video";
+    linkMp4.href = "/final_memojis_ios.mp4";
     document.head.appendChild(linkMp4);
   }, []);
 
@@ -87,7 +87,7 @@ export default function Home() {
       <div className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-center overflow-hidden z-10">
         <div
           className="hidden bg-gradient-to-b from-neutral-800/10 to-neutral-800/0 bg-clip-text text-[10rem] leading-none font-black text-transparent select-none sm:block lg:text-[16rem]"
-          style={{ marginBottom: '-2.5rem' }}
+          style={{ marginBottom: "-2.5rem" }}
         >
           CharlesB
         </div>
@@ -95,7 +95,7 @@ export default function Home() {
 
       <div className="absolute top-6 left-6 z-20">
         <button
-          onClick={() => goToChat('Are you looking to hire me?')}
+          onClick={() => goToChat("Are you looking to hire me?")}
           className="relative flex cursor-pointer items-center gap-2 rounded-full border bg-white/30 px-4 py-1.5 text-sm font-medium text-black shadow-md backdrop-blur-lg transition hover:bg-white/60 dark:border-white dark:text-white dark:hover:bg-neutral-800"
         >
           <span className="relative flex h-2 w-2">
@@ -113,12 +113,17 @@ export default function Home() {
         initial="hidden"
         animate="visible"
       >
-        <h2 className="text-secondary-foreground mt-1 text-xl font-semibold md:text-2xl">
-          Hey, I'm Charlie 👋
-        </h2>
-        <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
-          AI Portfolio
-        </h1>
+        <div className="flex flex-col gap-[8px]">
+          <h2 className="m-0 text-secondary-foreground text-xl font-semibold md:text-2xl">
+            Hey, I'm Charlie 👋
+          </h2>
+          <span className="text-secondary-foreground text-sm font-light md:text-2xl">
+            and this is my
+          </span>
+          <h1 className="m-0 text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
+            AI Portfolio
+          </h1>
+        </div>
       </motion.div>
 
       {/* centre memoji */}

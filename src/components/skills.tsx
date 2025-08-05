@@ -45,10 +45,11 @@ const Skills = () => {
         'LLM Providers (ChatGPT, Whisper, Claude)',
         'AI Agents',
         'Prompt engineering',
-        'Vector databases (Weaviate, Pinecone, Chroma)',
-        'RAG (Retrieval-Augmented Generation)',
+        // 'Vector databases (Weaviate, Pinecone, Chroma)',
+        // 'RAG (Retrieval-Augmented Generation)',
         'Hugging Face Transformers',
-        'PyTorch & TensorFlow',
+        'PyTorch',
+         'TensorFlow',
         'Scikit-learn',
         'Natural Language Processing',
         'Model fine-tuning & training',
@@ -60,7 +61,7 @@ const Skills = () => {
     {
       category: 'Design & Creative Tools',
       icon: <PenTool className="h-5 w-5" />,
-      skills: ['Figma', 'Illustrator', 'Canva',],
+      skills: ['Figma', 'Illustrator', 'Photoshop',],
       color: 'bg-indigo-50 text-indigo-600 border border-indigo-200',
     },
     {
