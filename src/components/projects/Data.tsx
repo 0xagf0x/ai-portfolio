@@ -280,6 +280,37 @@ const PROJECT_CONTENT = [
       },
     ],
   },
+   {
+    title: 'Crypto Coin Tracker',
+    description:
+      '',
+    techStack: [  'JavaScript', 'Typescript','TailwindCSS'],
+    date: '2024',
+    links: [
+      {
+        name: 'website',
+        url: 'https://coin-tracker-amber.vercel.app/'
+      },
+       {
+        name: 'github',
+        url: 'https://github.com/0xagf0x/coin-tracker'
+      },
+    ],
+    images: [
+      {
+        src: '/crypto_coin_tracker1.png',
+        alt: 'Currency view',
+      },
+      {
+        src: '/crypto_coin_tracker2.png',
+        alt: 'Trending view',
+      },
+      {
+        src: '/crypto_coin_tracker3.png',
+        alt: 'Search view',
+      },
+    ],
+  },
 ];
 
 // Define interface for project prop
@@ -432,6 +463,12 @@ export const data = [
     title: 'ThreeJS Scroller',
     src: '/preview_threejs_scroller.png',
     content: <ProjectContent project={{ title: 'ThreeJS Scroller' }} />,
+  },
+  {
+    category: 'Personal Hacking',
+    title: 'Crypto Coin Tracker',
+    src: '/preview_crypto_coin_tracker.png',
+    content: <ProjectContent project={{ title: 'Crypto Coin Tracker' }} />,
   },
   
 ];
