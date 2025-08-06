@@ -1,6 +1,5 @@
 ![image](assets/readme-photo.png)
  
-# World's first AI portfolio 🤖✨  
 
 
 
@@ -63,7 +62,5 @@ Want to run this project locally? Here's what you need:
 - **GitHub Token**: Generate one at [github.com/settings/tokens](https://github.com/settings/personal-access-tokens) with repo access
 
 
-
-#### 🔖 Tags
-
-`#AIPortfolio` `#InnovationInTech` `#DigitalResume` `#JobSearch` `#TechInnovation` `#WebDevelopment` `#FutureTech`
+ **Fluid Distortion**
+https://oframe.github.io/ogl/examples/?src=post-fluid-distortion.html
