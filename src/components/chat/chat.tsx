@@ -191,8 +191,9 @@ const Chat = () => {
       result.hasActiveTool =
         result.currentAIMessage.parts?.some(
           (part) =>
-            part.type === 'tool-invocation' &&
-            part.toolInvocation?.state === 'result'
+            part != null &&
+          part.type === 'tool-invocation' &&
+          part.toolInvocation?.state === 'result'
         ) || false;
     }
 
