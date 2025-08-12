@@ -124,7 +124,7 @@ const PROJECT_CONTENT = [
         alt: 'Detailed weather forecast',
       },
       {
-        src: '/ski_weather4.jpeg',
+        src: '/ski_weather4.png',
         alt: 'Dark mode',
       },
     ],
@@ -151,11 +151,11 @@ const PROJECT_CONTENT = [
         alt: 'SpoilerShield marketing page',
       },
       {
-        src: '/spoilershiel2.png',
+        src: '/spoilershield2.png',
         alt: 'SpoilerShield marketing page',
       },
       {
-        src: '/spoilershiel3.png',
+        src: '/spoilershield3.png',
         alt: 'SpoilerShield Google Chrome extension',
       },
     ],

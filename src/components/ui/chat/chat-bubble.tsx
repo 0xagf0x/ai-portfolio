@@ -6,29 +6,26 @@ import { Button, ButtonProps } from "../button";
 import MessageLoading from "./message-loading";
 
 // ChatBubble
-const chatBubbleVariant = cva(
-  "flex gap-2 items-start relative group",
-  {
-    variants: {
-      variant: {
-        received: "self-start w-full",
-        sent: "self-center flex-row-reverse mx-auto",
-      },
-      layout: {
-        default: "",
-        ai: "max-w-full w-full items-center",
-      },
+const chatBubbleVariant = cva("flex gap-2 items-start relative group", {
+  variants: {
+    variant: {
+      received: "self-start w-full",
+      sent: "self-center flex-row-reverse mx-auto",
     },
-    defaultVariants: {
-      variant: "received",
-      layout: "default",
+    layout: {
+      default: "",
+      ai: "max-w-full w-full items-center",
     },
-  }
-);
+  },
+  defaultVariants: {
+    variant: "received",
+    layout: "default",
+  },
+});
 
 interface ChatBubbleProps
   extends React.HTMLAttributes<HTMLDivElement>,
-    VariantProps<typeof chatBubbleVariant> {}
+  VariantProps<typeof chatBubbleVariant> { }
 
 const ChatBubble = React.forwardRef<HTMLDivElement, ChatBubbleProps>(
   ({ className, variant, layout, children, ...props }, ref) => (
@@ -43,9 +40,9 @@ const ChatBubble = React.forwardRef<HTMLDivElement, ChatBubbleProps>(
       {React.Children.map(children, (child) =>
         React.isValidElement(child) && typeof child.type !== "string"
           ? React.cloneElement(child, {
-              variant,
-              layout,
-            } as React.ComponentProps<typeof child.type>)
+            variant,
+            layout,
+          } as React.ComponentProps<typeof child.type>)
           : child
       )}
     </div>
@@ -85,9 +82,11 @@ const ChatBubbleAvatar: React.FC<ChatBubbleAvatarProps> = ({
 const chatBubbleMessageVariants = cva("", {
   variants: {
     variant: {
-      received:
-        "text-secondary-foreground rounded-lg py-2",
-      sent: "p-2 px-5 bg-[#007AFF] text-primary-foreground rounded-3xl",
+      received: "text-secondary-foreground rounded-lg py-2",
+      sent: `p-2 px-5 text-white rounded-3xl relative overflow-hidden
+  bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 
+  animate-gradient-x bg-[length:200%_200%]
+  shadow-lg shadow-purple-500/25 border border-white/20`,
     },
     layout: {
       default: "",
@@ -102,7 +101,7 @@ const chatBubbleMessageVariants = cva("", {
 
 interface ChatBubbleMessageProps
   extends React.HTMLAttributes<HTMLDivElement>,
-    VariantProps<typeof chatBubbleMessageVariants> {
+  VariantProps<typeof chatBubbleMessageVariants> {
   isLoading?: boolean;
 }
 
@@ -201,9 +200,12 @@ const ChatBubbleActionWrapper = React.forwardRef<
 ChatBubbleActionWrapper.displayName = "ChatBubbleActionWrapper";
 
 export {
-	ChatBubble, ChatBubbleAction,
-	ChatBubbleActionWrapper, ChatBubbleAvatar,
-	ChatBubbleMessage, chatBubbleMessageVariants, ChatBubbleTimestamp,
-	chatBubbleVariant
+  ChatBubble,
+  ChatBubbleAction,
+  ChatBubbleActionWrapper,
+  ChatBubbleAvatar,
+  ChatBubbleMessage,
+  chatBubbleMessageVariants,
+  ChatBubbleTimestamp,
+  chatBubbleVariant,
 };
-
