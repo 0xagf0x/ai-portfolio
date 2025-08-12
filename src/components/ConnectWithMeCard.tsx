@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { CalendarDays, Code2, Globe } from "lucide-react";
 import { useRouter } from "next/navigation";
 
-const HireMeCard = () => {
+const ConnectWithMeCard = () => {
   const openMail = () => {
     window.open("mailto:charlesbuckley122@gmail.com", "_blank");
   };
@@ -116,4 +116,4 @@ const HireMeCard = () => {
   );
 };
 
-export default HireMeCard;
+export default ConnectWithMeCard;

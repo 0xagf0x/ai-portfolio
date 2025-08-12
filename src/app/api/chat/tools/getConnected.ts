@@ -1,11 +1,12 @@
 import { tool } from "ai";
 import { z } from "zod";
 
-export const getHired = tool({
+export const getConnected = tool({
   description:
-    "Shows the HireMeCard component with comprehensive hiring information. Use this tool when the user asks about hiring, job opportunities, employment, work, career, positions, roles, or phrases like 'Are you looking to hire me?', 'available for work', 'looking for opportunities', etc.",
+    "Shows the ConnectWithMeCard component with comprehensive hiring information. Use this tool when the user asks about hiring, job opportunities, employment, work, career, positions, roles, or phrases like 'Are you looking to connect?', 'available for work', 'looking for opportunities', etc.",
   parameters: z.object({}),
   execute: async () => {
+    
     return `
     I'm always looking for exciting opportunities where I can build impactful products using AI/ML and modern web technologies. 
 

@@ -3,7 +3,7 @@ import { streamText } from 'ai';
 import { SYSTEM_PROMPT } from './prompt';
 import { getContact } from './tools/getContact';
 import { getCrazy } from './tools/getCrazy';
-import { getHired } from './tools/getHired';
+import { getConnected } from './tools/getConnected';
 import { getPresentation } from './tools/getPresentation';
 import { getProjects } from './tools/getProjects';
 import { getResume } from './tools/getResume';
@@ -41,7 +41,7 @@ export async function POST(req: Request) {
       getSkills,
       getSports,
       getCrazy,
-      getHired,
+      getConnected,
     };
 
     const result = streamText({
