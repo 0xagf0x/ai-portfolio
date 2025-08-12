@@ -44,7 +44,6 @@ export default function Home() {
   const goToChat = (query: string) =>
     router.push(`/chat?query=${encodeURIComponent(query)}`);
 
-  /* hero animations (unchanged) */
   const topElementVariants = {
     hidden: { opacity: 0, y: -60 },
     visible: {
@@ -63,13 +62,11 @@ export default function Home() {
   };
 
   useEffect(() => {
-    // Précharger les assets du chat en arrière-plan
     const img = new window.Image();
     img.src = "/landing-memojis.png";
 
-    // Précharger les vidéos aussi
     const linkWebm = document.createElement("link");
-    linkWebm.rel = "preload"; // Note: prefetch au lieu de preload
+    linkWebm.rel = "preload"; 
     linkWebm.as = "video";
     linkWebm.href = "/final_memojis.webm";
     document.head.appendChild(linkWebm);
